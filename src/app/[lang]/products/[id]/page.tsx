@@ -16,7 +16,7 @@ const translations = {
   },
 }
 
-const defaultLang = 'en'
+const defaultLang = 'es'
 
 // This would typically come from an API or database
 const products: Product[] = [

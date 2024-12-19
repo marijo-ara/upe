@@ -30,7 +30,7 @@ interface PageProps {
 
 export default async function Home({ params }: PageProps) {
   const { lang } = await params
-  const defaultLang = 'en'
+  const defaultLang = 'es'
   const t = translations[lang as keyof typeof translations] || translations[defaultLang]
 
   return (
@@ -50,7 +50,7 @@ export default async function Home({ params }: PageProps) {
             <div key={category} className="bg-card p-6 rounded-lg text-center shadow-sm">
               <h3 className="text-xl font-semibold mb-2 text-card-foreground">{t[category as keyof typeof t]}</h3>
               <Button variant="outline" asChild>
-                <Link href={`/${lang}/products/${category}`}>{t.view} {t[category as keyof typeof t]}</Link>
+                <Link href={`/${lang}/products/${category}`}>{t.view}</Link>
               </Button>
             </div>
           ))}

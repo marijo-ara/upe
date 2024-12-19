@@ -6,7 +6,7 @@ import { ShoppingCart } from 'lucide-react'
 import { Button } from './ui/Button'
 import AuthButtons from './AuthButtons'
 
-const locales = ['en', 'es']
+const locales = ['es', 'en']
 
 const translations = {
   en: {
@@ -27,7 +27,7 @@ const translations = {
 
 const Header = ({ lang }: { lang: string }) => {
   const pathname = usePathname()
-  const defaultLang = 'en'
+  const defaultLang = 'es'
   const t = translations[lang as keyof typeof translations] || translations[defaultLang]
 
   const switchLanguage = (newLang: string) => {

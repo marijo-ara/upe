@@ -1,3 +1,5 @@
+
+import '../globals.css'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '../components/Header'
@@ -32,16 +34,16 @@ export default async function LangLayout({ children, params }: LayoutProps) {
 
   return (
     <html lang={lang}>
-      <body className={inter.className}>
-        <AuthProvider>
-          <Header lang={lang} />
-          <main className="container mx-auto px-4 py-8">
-            {children}
-          </main>
-          <Footer lang={lang} />
-        </AuthProvider>
-      </body>
-    </html>
-  )
+    <body className={inter.className}>
+      <AuthProvider>
+        <Header lang={lang} />
+        <main className="container mx-auto px-4 py-8">
+          {children}
+        </main>
+        <Footer lang={lang} />
+      </AuthProvider>
+    </body>
+  </html>
+)
 }
 
