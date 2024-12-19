@@ -29,7 +29,7 @@ export default async function LangLayout({ children, params }: LayoutProps) {
     ({ lang } = await params)
   } catch (error) {
     console.error('Error resolving language parameter:', error)
-    lang = 'es' // Default to English if there's an error
+    lang = 'es' // Default if there's an error
   }
 
   return (

@@ -34,7 +34,7 @@ export function LoginModal() {
       <DialogTrigger asChild>
         <Button variant="outline">Login</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] bg-white shadow-lg rounded-md">
         <DialogHeader>
           <DialogTitle>Login to UPE</DialogTitle>
           <DialogDescription>

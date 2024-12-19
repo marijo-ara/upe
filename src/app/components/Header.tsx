@@ -59,17 +59,18 @@ const Header = ({ lang }: { lang: string }) => {
           </Link>
           <AuthButtons />
           <div className="flex space-x-2">
-            {locales.map((locale) => (
-              <Button
-                key={locale}
-                variant={locale === lang ? 'default' : 'outline'}
-                size="sm"
-                asChild
-              >
-                <Link href={switchLanguage(locale)}>{locale.toUpperCase()}</Link>
-              </Button>
-            ))}
-          </div>
+  {locales.map((locale) => (
+    <Button
+      key={locale}
+      className={`size-sm ${
+        locale === lang ? 'bg-blue-500 text-white' : 'bg-white text-gray-500 border'
+      }`}
+      asChild
+    >
+      <Link href={switchLanguage(locale)}>{locale.toUpperCase()}</Link>
+    </Button>
+  ))}
+</div>
         </div>
       </div>
     </header>
