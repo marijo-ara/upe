@@ -16,7 +16,7 @@ const translations = {
     welcome: 'Bienvenido a UPE',
     description: 'Descubre las últimas tendencias en zapatos, ropa y accesorios',
     shopNow: 'Comprar Ahora',
-    featuredCategories: 'Categorías Destacadas',
+    featuredCategories: 'Categorías',
     shoes: 'Zapatos',
     clothes: 'Ropa',
     accessories: 'Accesorios',
