@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
+    "target": "ES2020", // Actualizado a ES2020
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -11,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "preserve", // Actualizado para React 17+ (automática transformación JSX)
     "incremental": true,
     "plugins": [
       {
@@ -19,11 +23,20 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["./src/app/components/*"],
-      "@components/ui/*": ["./src/app/components/ui/*"],
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "strictNullChecks": true, // Añadido para controlar null y undefined explícitamente
+    "experimentalDecorators": true // Añadido en caso de que uses decoradores
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
