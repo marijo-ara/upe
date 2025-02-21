@@ -1,0 +1,70 @@
+ {
+	"env": {
+		"browser": true,
+		"es2024": true,
+		"cypress/globals": true
+	},
+	"plugins": [
+		"cypress"
+	  ],
+	"extends": [
+		"eslint:recommended",
+		"plugin:cypress/recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 14,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		  }
+	},
+	"rules": {
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"indent": ["error", "tab"],
+		"no-multi-spaces": ["error"],
+		"no-console": "warn",
+		//* Avoid Bugs
+		"no-undef": "error",
+		"semi-spacing": "error",
+		//* Best Practices
+		"eqeqeq": "warn",
+		//"no-invalid-this": "error",
+		"no-return-assign": "error",
+		//"no-unused-expressions": ["error", { "allowTernary": true }],
+		"no-useless-concat": "error",
+		"no-useless-return": "error",
+		"no-constant-condition": "warn",
+		"no-unused-vars": ["warn", { "argsIgnorePattern": "req|res|next|__" }],
+		//* Enhance Readability
+		"no-mixed-spaces-and-tabs": "warn",
+		"space-before-blocks": "error",
+		"space-in-parens": "error",
+		"space-infix-ops": "error",
+		"space-unary-ops": "error",
+		//
+		"max-len": ["error", { "code": 1500 }],
+		"max-lines": ["error", { "max": 2000, "skipBlankLines": true, "skipComments": true }],
+		"keyword-spacing": "error",
+		"multiline-ternary": ["error", "never"],
+		"no-mixed-operators": "error",
+		//
+		"no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+		"no-whitespace-before-property": "error",
+		"nonblock-statement-body-position": "error",
+		"object-property-newline": [ "error", { "allowAllPropertiesOnSameLine": true }],
+		//* ES6
+		"arrow-spacing": "error",
+		"no-confusing-arrow": "error",
+		"no-duplicate-imports": "error",
+		"no-var": "error",
+		"object-shorthand": "off",
+		"prefer-const": "error",
+		"prefer-template": "warn"
+	},
+	"overrides": [
+		{
+		  "files": [ "*.spec.js", "*.cy.js"]//"src/**/*.js", "src/**/*.jsx",
+		}
+	  ]
+}

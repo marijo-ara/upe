@@ -14,4 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
+import "./loginPageCommands";
+
+
+
+// Alternatively you can use CommonJS syntax:
+// require('./commands')
+
+Cypress.on("uncaught:exception", (e, runnable) => {
+	cy.log("error", e);
+	cy.log("runnable", runnable);
+	return false;
+});

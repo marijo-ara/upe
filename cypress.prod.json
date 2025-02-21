@@ -1,0 +1,8 @@
+{
+  "baseUrl": "https://glassfrog.shop/products",
+  "env": {
+    "username": "maria.araya@gmail.app",
+    "password": "Testing@123456",
+    "apiGraphqlURL": "https://graphql.glassfrog.app/graphql"
+  }
+}

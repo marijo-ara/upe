@@ -1,0 +1,9 @@
+{
+	"baseUrl": "https://upe-store-qa.vercel.app/",
+	"numTestsKeptInMemory": 0,
+	"env": {
+		"apiGraphqlURL": "https://qa.graphql.upgraid.app/graphql",
+		"username": "maria.araya@gmail.app",
+		"password": "Testing@123456"
+	}
+}

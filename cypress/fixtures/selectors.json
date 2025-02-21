@@ -1,0 +1,21 @@
+{
+	"globals": {
+		"pageContainer": ".MuiContainer-root",
+		"page_root": ".MuiGrid-root",
+		"form_group_root": ".MuiFormGroup-root",
+		"mend_logo": "img[alt='site logo']",
+		"list_options": "ul[role='listbox'] > li",
+		"input_date": "input[type='date']",
+		"filters_icon": "button[aria-label='open drawer']"
+	},
+	"filters": {
+		"search_input_field": "input[name=\"search\"]"
+	},
+	"dashboard": {
+		"recordClass": "MuiTableCell-root MuiTableCell-body",
+		"recordNameClass": "MuiLink-underlineHover",
+		"newPageSubtitle": ".MuiTypography-subtitle1",
+		"sectionsClass": ".MuiContainer-maxWidthMd",
+		"linkedAccountClass": ".MuiPaper-outlined.MuiPaper-rounded"
+	}
+}
